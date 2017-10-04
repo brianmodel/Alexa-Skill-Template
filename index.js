@@ -1,7 +1,5 @@
 'use strict'
 
-
-
 var generateResponse = function(options) {
   //This function takes in an object with the keys speechText, endSession and repromtText
   //speechText is what you want the alexa to say
