@@ -59,9 +59,9 @@ exports.handler = function(event, context){
     }else if (request.type==="IntentRequest"){
       let options = {}
       if (request.intent.name===){//Put the name of your intent
-        //options.speechText = ADD WHAT YOU WANT THE ALEXA TO SAY
-        //options.repromptText = ADD WHAT YOU WANT THE REPROMPT TEXT TO BE
-        //options.endSession = TRUE/FALSE IF YOU WANT THE SESSION TO endSession
+        //options.speechText = //ADD WHAT YOU WANT THE ALEXA TO SAY
+        //options.repromptText = //ADD WHAT YOU WANT THE REPROMPT TEXT TO BE
+        //options.endSession = //TRUE/FALSE IF YOU WANT THE SESSION TO endSession
         context.succeed(generateResponse(options))
       }else{
         throw("UNKNOWN INTENT: "+ request.intent.name)
